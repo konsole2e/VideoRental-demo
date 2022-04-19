@@ -109,7 +109,7 @@ public class CmdUI {
 
         for (Customer customer : findAllCustomers()) {
             System.out.println("ID: " + customer.getCode() + ", "
-                    + "Name: " + customer.getName() + ", "
+                    + "Names: " + customer.getName() + ", "
                     + "Rentals: " + customer.getRentals().size());
             for (Rental rental : customer.getRentals()) {
                 System.out.println("\tTitle: " + rental.getVideo().getTitle() + ", "
